@@ -6,6 +6,11 @@ body {
   margin-top: 20px;
 }
 
+.img_casa {
+  height: 100px;
+  width: 150px;
+}
+
 /* Animaciones */
 .animated {
   -webkit-animation-duration: 1s;

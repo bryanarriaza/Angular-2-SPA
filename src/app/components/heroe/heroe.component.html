@@ -6,17 +6,19 @@
   <div class="col-md-4">
     <img [src]="heroe.img" class="img-fluid pull-xs-left" [alt]="heroe.img">
     <br><br>
-    <button type="button" class="btn btn-outline-primary">Regresar</button>
+    <button type="button" class="btn btn-outline-primary btn-block">Regresar</button>
   </div>
 
   <div class="col-md-8">
     <h3>{{ heroe.nombre }}</h3>
     <hr>
     <p>{{ heroe.bio }}</p>
-  </div>
-
-  <div *ngIf="expression">
-
+    <div *ngIf="heroe.casa=='DC'">
+      <img src="assets/img/dc.png" alt="" class="img_casa">
+    </div>
+    <div *ngIf="heroe.casa=='Marvel'">
+      <img src="assets/img/marvel.png" alt="" class="img_casa">
+    </div>
   </div>
 
 </div>
